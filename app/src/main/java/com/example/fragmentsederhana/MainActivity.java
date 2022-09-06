@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         btn_fragment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+            getSupportFragmentManager().beginTransaction().add(R.id.frame_layout,new fragment_satu()).commit();
             }
         });
     }
